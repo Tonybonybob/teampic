@@ -1,0 +1,42 @@
+/* 
+::-webkit-scrollbar { width: 6px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: rgb(241, 214, 2); }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;} */
+::-webkit-scrollbar-track { 
+    background-color:rgb(255, 255, 255);
+    box-shadow:inset 0px 0px 3px rgba(1, 144, 184, 0.5); 
+    margin: 5px;
+    } 
+
+    ::-webkit-scrollbar-thumb { 
+    border-radius: 3px; 
+    background-color: #1e4363; 
+    }
+    
+::-webkit-scrollbar{ 
+    width: 5px; 
+    }
+    ::-webkit-scrollbar-button {  
+        background-color: #ff8926; }
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+.blocks {
+    border:1px dotted #282828;
+    height: 200px;
+    margin: 5px;
+}
+.overflv{
+    height: 82vh;
+    overflow: auto;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}

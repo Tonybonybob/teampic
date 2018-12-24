@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-
-class App extends Component {
+import Menu from './components/menu'
+import Head from './components/heading'
+import Vector from './components/vector'
+import Ddd from './components/3d'
+import Psd from './components/psd'
+import Icons from './components/icons'
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <Router>
+        <React.Fragment>
+          <Head/>
+          <Menu/>
+          <Switch>
+          <Route path="/vector" component = {Vector}  />
+          <Route path="/psd" component = {Psd}  />
+          <Route path="/icons" component = {Icons}  />
+          <Route path="/3d" component = {Ddd}  />
+          </Switch>
+        </React.Fragment>
+      </Router>
+    )
   }
 }
 
-export default App;

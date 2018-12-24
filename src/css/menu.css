@@ -1,0 +1,75 @@
+
+
+.navigation{
+    position: fixed;
+    width: 4.2em;
+    height: auto;
+    background: #1e4363;
+    transition:0.4s;
+
+
+}
+.navigation ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    width: 13em;
+
+}
+.navigation ul li{
+    height: 55px;
+    cursor: pointer;
+    color:#fff;
+    display: flex;
+    transition:0.3s;
+}
+.menuImg{
+    padding: 0 5px;
+ width: 50px;
+ height: 55px;
+ transition:0.3s;
+}
+.menuLink{
+    opacity: 0;
+/*    visibility: hidden;*/
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 100px;
+    height: 55px;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: 200;
+    transition: 0.3s;
+}
+.vectorImg{
+    background: url('../img/ai.png')no-repeat center center;
+    -webkit-background-size: 45px;
+    background-size: 35px;
+}
+.psdImg{
+    background: url('../img/psd.png')no-repeat center center;
+    background-size: 35px;
+}
+.iconsImg{
+    background: url('../img/icon.png')no-repeat center center;
+    background-size: 35px;
+}
+.dddImg{
+    background: url('../img/3d.png')no-repeat center center;
+    background-size: 35px;
+}
+.navigation:hover{
+    width: 13em;
+}
+.navigation:hover .menuLink{
+    /*visibility: visible;*/
+    opacity: 1;
+}
+.navigation ul li:hover{
+    border-left: 5px solid #ff8926;
+
+}
+.navigation ul li:hover .menuImg{
+    background-color: #ffb00d;
+/*background: #1e4363;*/
+}
